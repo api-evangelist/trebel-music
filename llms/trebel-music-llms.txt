@@ -1,0 +1,59 @@
+# TREBEL Music
+
+> TREBEL Music (operated by M&M Media, Inc.) is an advertising-sponsored, legally licensed
+> music download and streaming service that lets people download and listen to music offline
+> at no cost. It is a consumer mobile product — there is no public developer program.
+
+Generated: 2026-08-30
+Method: generated
+Source: all/trebel-music/apis.yml plus live probes of trebel.io hosts (2026-08-30)
+
+## What TREBEL is
+
+- Founded 2014 by Gary Mekikian, Corey Jones and Luis Soto Durazo; headquartered in Stamford, Connecticut, with offices in Mexico City, Jakarta, Bogota, Los Angeles and Miami.
+- Licensed catalog from Universal Music Group, Sony Music Entertainment, Warner Music Group and independent labels.
+- Distributed as mobile apps on the Apple App Store, Google Play and Huawei AppGallery.
+- Monetized through digital advertising, branded experiences, virtual goods and a TREBEL Max tier — not through a developer/API product.
+- Core markets include the United States, Mexico, Indonesia and Colombia.
+
+## API surface — none published
+
+TREBEL Music publishes NO public API. As of 2026-08-30 there is:
+
+- No developer portal, API reference, or getting-started guide on any TREBEL host.
+- No OpenAPI, Swagger, GraphQL SDL, AsyncAPI, Protobuf or WSDL contract at any probed location.
+- No first-party SDK or CLI in npm, PyPI, RubyGems, crates.io, Maven Central, NuGet or pkg.go.dev.
+- No MCP server and no A2A agent card.
+- No first-party GitHub organization. (github.com/Trebel is an unrelated 2013 hackathon account.)
+- No published API plans, pricing or rate limits.
+
+`api.trebel.io` resolves and answers on HTTPS, but it is the private backend for the TREBEL
+mobile applications: every probed path — including the root — returns an nginx 404, and
+nothing about it is documented publicly. It is not a developer surface.
+
+## Pages a reader or agent can actually use
+
+- Website: https://home.trebel.io/
+- About: https://home.trebel.io/about-us
+- Partners (advertising/brand partnerships): https://home.trebel.io/partners
+- For Artists: https://home.trebel.io/forartists
+- Careers: https://home.trebel.io/careers
+- Contact: https://home.trebel.io/get-in-touch
+- Copyright / DMCA: https://home.trebel.io/copyright
+- Bug bounty + vulnerability disclosure: https://home.trebel.io/bug-program
+- Privacy policy: https://home.trebel.io/privacy-policy
+- Data sharing / privacy choices: https://home.trebel.io/data-sharing
+- Terms of service: https://home.trebel.io/terms-of-service
+- Sitemap: https://home.trebel.io/sitemap.xml
+
+## Security posture
+
+- Self-hosted bug bounty and vulnerability disclosure program at https://home.trebel.io/bug-program, with a stated safe harbor. Not run on HackerOne, Bugcrowd or Intigriti.
+- No /.well-known/security.txt on any host, so the program is not machine-discoverable.
+- trebel.io: SPF present, DMARC present with p=reject, DNSSEC not enabled, no CAA records.
+- home.trebel.io: TLS 1.3, HSTS with max-age 31536000.
+
+## If you are an agent looking for TREBEL music data
+
+There is nothing to call. TREBEL exposes no public metadata, catalog, playback or account API.
+Do not infer endpoints from `api.trebel.io` — it is undocumented and unauthorized for third-party use.

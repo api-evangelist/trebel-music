@@ -1,0 +1,71 @@
+generated: '2026-08-30'
+method: probed
+source: live HTTP probe of every TREBEL-controlled host (2026-08-30)
+name: TREBEL Music .well-known probe
+description: >-
+  Probe of the RFC 8615 /.well-known/ namespace on every host TREBEL Music controls that
+  answers on the public internet. No path returned a document. api.trebel.io answers with
+  an nginx 404 on every probed path (it is a private application backend for the mobile
+  apps, not a documented developer surface); home.trebel.io is a Nuxt site whose 404s are
+  either an empty JSON body or the SPA shell. No WellKnown or SecurityTxt pointer is
+  emitted, because nothing was served.
+hosts:
+- host: api.trebel.io
+  note: >-
+    Live nginx origin behind Cloudflare; serves the TREBEL mobile applications. Root and
+    every probed path return HTTP 404. No public documentation or contract.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: home.trebel.io
+  note: >-
+    Corporate + consumer marketing site (Nuxt SSR). All /.well-known/ paths 404; the HTML
+    responses are the SPA shell, which is NOT a document.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+summary:
+  hosts_probed: 2
+  paths_probed: 15
+  documents_found: 0

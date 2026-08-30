@@ -1,17 +1,34 @@
 aid: trebel-music
-name: Trebel Music
-description: 'Trebel Music is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: TREBEL Music
+description: >-
+  TREBEL Music (operated by M&M Media, Inc.) is an advertising-sponsored, legally licensed
+  music download and streaming service that lets people download and listen to music offline
+  at no cost. Founded in 2014 by Gary Mekikian, Corey Jones and Luis Soto Durazo and
+  headquartered in Stamford, Connecticut with offices in Mexico City, Jakarta, Bogota,
+  Los Angeles and Miami, TREBEL licenses catalog from Universal Music Group, Sony Music
+  Entertainment, Warner Music Group and independent labels, and monetizes through digital
+  advertising, branded experiences, virtual goods and a TREBEL Max tier rather than a
+  conventional paid subscription. TREBEL is a consumer mobile product distributed through
+  the Apple App Store, Google Play and Huawei AppGallery; it publishes no public developer
+  program, API reference, SDK or machine-readable contract.
 url: https://raw.githubusercontent.com/api-evangelist/trebel-music/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
+image: https://home.trebel.io/TREBEL_favicon.png
 specificationVersion: '0.20'
 created: '2026-08-30'
 modified: '2026-08-30'
 tags:
 - Company
+- Music
+- Music Streaming
+- Media
+- Entertainment
+- Mobile Apps
+- Advertising
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,56 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/trebel-music-vulnerability-disclosure.yml
+- type: LLMsTxt
+  url: llms/trebel-music-llms.txt
+- type: Plans
+  url: plans/trebel-music-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/trebel-music-rate-limits.yml
+- type: DomainSecurity
+  url: security/trebel-music-domain-security.yml
 - type: Website
-  url: https://www.hiive.com/securities/trebel-music-stock
+  url: https://home.trebel.io/
+- type: Support
+  url: https://home.trebel.io/get-in-touch
+- type: TermsOfService
+  url: https://home.trebel.io/terms-of-service
+- type: PrivacyPolicy
+  url: https://home.trebel.io/privacy-policy
+- type: Security
+  url: https://home.trebel.io/bug-program
+- type: X (Twitter)
+  url: https://twitter.com/trebelmusic
+- type: LinkedIn
+  url: https://www.linkedin.com/company/trebelmusic/
+- type: YouTube
+  url: https://www.youtube.com/channel/UCPy1kySujznHGx2wHXwUWTg
+- type: Facebook
+  url: https://www.facebook.com/trebelapp
+x-enrichment:
+  date: '2026-08-30'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    TREBEL is a consumer music app with no developer program at all — its sitemap lists 45
+    pages and not one is a developer portal, API reference or spec, and api.trebel.io is a
+    private nginx backend for the mobile apps that returns 404 on its root and on every
+    OpenAPI/GraphQL/MCP/agent-card path probed.
+  evidence:
+  - url: https://api.trebel.io/openapi.json
+    status: 404
+  - url: https://api.trebel.io/
+    status: 404
+  - url: https://home.trebel.io/sitemap.xml
+    status: 200
+  - url: https://home.trebel.io/docs
+    status: 404
+  - url: https://api.trebel.io/.well-known/agent-card.json
+    status: 404
+  checked: '2026-08-30'

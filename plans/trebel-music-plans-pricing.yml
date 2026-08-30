@@ -1,0 +1,30 @@
+generated: '2026-08-30'
+method: searched
+source: https://home.trebel.io/
+name: TREBEL Music plans and pricing
+description: >-
+  TREBEL Music publishes no API plans, no developer pricing page and no commercial API tiers,
+  because it publishes no public API. Its only published commercial surfaces are the consumer
+  product (free, advertising-sponsored, with a TREBEL Max tier earned or purchased inside the
+  mobile app) and an advertising/brand partnership motion handled through a contact form. No
+  price, currency, quota or overage is published for either on the public site.
+plan_count: 0
+plans: []
+notes:
+- >-
+  No developer or API pricing page exists on any TREBEL host. /pricing, /plans and a developer
+  portal are all absent; the sitemap at https://home.trebel.io/sitemap.xml lists no such page.
+- >-
+  Consumer monetization (advertising, branded experiences, virtual goods, TREBEL Max) happens
+  inside the mobile applications and is not published as a priced web tier, so nothing here can
+  be recorded as a plan without inventing it.
+- >-
+  Brand/advertising partnerships are a contact-sales motion at https://home.trebel.io/partners
+  with no published rate card.
+x-evidence:
+- url: https://home.trebel.io/
+  status: 200
+- url: https://home.trebel.io/partners
+  status: 200
+- url: https://home.trebel.io/sitemap.xml
+  status: 200

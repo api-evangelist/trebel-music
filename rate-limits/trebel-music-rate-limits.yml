@@ -1,0 +1,27 @@
+generated: '2026-08-30'
+method: searched
+source: https://home.trebel.io/sitemap.xml
+name: TREBEL Music rate limits
+description: >-
+  No rate limits are published, because TREBEL Music publishes no public API and no developer
+  documentation in which limits could be stated. The api.trebel.io host is the private backend
+  for the TREBEL mobile applications; it returns an nginx 404 on every probed path and emits no
+  RateLimit-*, X-RateLimit-* or Retry-After header on those responses.
+limit_count: 0
+limits: []
+headers: []
+notes:
+- >-
+  Probed https://api.trebel.io/ on 2026-08-30 — HTTP 404 from nginx behind Cloudflare, with no
+  rate-limit headers in the response. Response headers observed were date, content-type, vary,
+  nel, strict-transport-security, cf-cache-status, report-to, server, cf-ray and alt-svc.
+- >-
+  No developer portal, API reference or getting-started page exists on any TREBEL host in which
+  limits could be documented.
+x-evidence:
+- url: https://api.trebel.io/
+  status: 404
+- url: https://api.trebel.io/openapi.json
+  status: 404
+- url: https://home.trebel.io/docs
+  status: 404
