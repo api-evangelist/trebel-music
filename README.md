@@ -1,4 +1,4 @@
-# Trebel Music
+# TREBEL Music
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Trebel Music is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/trebel-music-stock
+TREBEL Music (operated by M&M Media, Inc.) is an advertising-sponsored, legally licensed music download and streaming service that lets people download and listen to music offline at no cost. Founded in 2014 by Gary Mekikian, Corey Jones and Luis Soto Durazo and headquartered in Stamford, Connecticut with offices in Mexico City, Jakarta, Bogota, Los Angeles and Miami, TREBEL licenses catalog from Universal Music Group, Sony Music Entertainment, Warner Music Group and independent labels, and monetizes through digital advertising, branded experiences, virtual goods and a TREBEL Max tier rather than a conventional paid subscription. TREBEL is a consumer mobile product distributed through the Apple App Store, Google Play and Huawei AppGallery; it publishes no public developer program, API reference, SDK or machine-readable contract.
+
+**Areas:** Company · Music · Music Streaming · Media · Entertainment · Mobile App · Advertising · Consumer
+
+## TREBEL Music on APIs.io
+
+Everything profiled for TREBEL Music is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/trebel-music/](https://apis.io/providers/trebel-music/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Trebel Music Domain Security](https://apis.io/security/trebel-music/trebel-music-domain-security/)
+- [Trebel Music Vulnerability Disclosure](https://apis.io/security/trebel-music/trebel-music-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Trebel Music Plans Pricing](https://apis.io/plans/trebel-music/trebel-music-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Trebel Music Rate Limits](https://apis.io/rate-limits/trebel-music/trebel-music-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://home.trebel.io/)
+- [Support](https://home.trebel.io/get-in-touch)
+- [Security](https://home.trebel.io/bug-program)
+- [Terms of service](https://home.trebel.io/terms-of-service)
+- [Privacy policy](https://home.trebel.io/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 12.8** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/trebel-music/](https://apis.io/providers/trebel-music/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for TREBEL Music: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/trebel-music/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
